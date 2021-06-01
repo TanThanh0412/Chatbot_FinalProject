@@ -1,6 +1,10 @@
-from chatbot import chatbot
-from flask import Flask, render_template, request
-
+from datetime import datetime
+import json
+import random
+from chatterbot import ChatBot
+from flask import Flask, request
+from covid import Covid
+from iso3166 import countries
 app = Flask(__name__)
 app.static_folder = 'static'
 
